@@ -1,13 +1,10 @@
-/snap/clion/180/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/180/bin/ninja/linux/ninja -G Ninja /home/dani/Escritorio/P1
--- The C compiler identification is unknown
-CMake Error at CMakeLists.txt:3 (project):
-  No CMAKE_C_COMPILER could be found.
-
-  Tell CMake where to find the compiler by setting either the environment
-  variable "CC" or the CMake cache entry CMAKE_C_COMPILER to the full path to
-  the compiler, or to the compiler name if it is in the PATH.
-
-
--- Configuring incomplete, errors occurred!
-See also "/home/dani/Escritorio/P1/cmake-build-debug/CMakeFiles/CMakeOutput.log".
-See also "/home/dani/Escritorio/P1/cmake-build-debug/CMakeFiles/CMakeError.log".
+/snap/clion/180/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/180/bin/ninja/linux/ninja -G Ninja /home/dani/Escritorio/PRO-II-P1
+-- The C compiler identification is GNU 9.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/dani/Escritorio/PRO-II-P1/cmake-build-debug

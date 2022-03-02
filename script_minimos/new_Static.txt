@@ -1,0 +1,5 @@
+Command: 01 N product1 user1 painting 150.00
+Command: 03 N product2 user1 painting 120.00
+Command: 05 N product3 user2 book 20.00
+Command: 07 N product4 user2 book 39.50
+Command: 09 N product3 user3 book 19.50
