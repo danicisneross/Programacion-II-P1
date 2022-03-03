@@ -1,0 +1,4 @@
+# ninja log v5
+0	75	1646298973339855046	CMakeFiles/test_lists.dir/test.c.o	81e96914a9c9081c
+0	76	1646298973339855046	CMakeFiles/test_lists.dir/dynamic_list.c.o	bf95ef5017f6762d
+76	99	1646298973363856705	../bin/test_lists	ad299fa3e6c5fcb5
