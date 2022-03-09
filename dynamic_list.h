@@ -26,9 +26,9 @@ void createEmptyList(tList *L);
 
 /**
  * OBJETIVO: crear una lista vacia.
- * ENTRADA: -tList: lista de productos.
+ * ENTRADA: -tList: lista.
  * SALIDA: una lista vacia.
- * POSTCD: La lista queda inicializada y no contine elementos.
+ * POSTCD: la lista queda inicializada y no contine elementos.
 **/
 
 bool isEmptyList(tList L);
@@ -36,7 +36,7 @@ bool isEmptyList(tList L);
 /**
  * OBJETIVO: determina si la lista vacia.
  * ENTRADA: -tList: lista de productos.
- * SALIDA: un valor de dato bool donde:
+ * SALIDA: un valor de tipo bool donde aparece:
  *              Verdadero: si esta vacia.
  *              Falso: en caso contrario.
 **/
@@ -66,7 +66,7 @@ tPosL next(tPosL p, tList L);
  *           (o LNULL si la posición no tiene siguiente).
  * ENTRADA: -tPosL: posicion de un elemento de la lista.
  *          -tList: lista de productos.
- * SALIDA: la posicion siguiente a la posicion indicada.
+ * SALIDA: la posicion siguiente a la indicada.
  * PRECD: la posición indicada es una posición válida en la lista.
 **/
 
@@ -77,7 +77,7 @@ tPosL previous(tPosL p, tList L);
  *           (o LNULL si la posición no tiene anterior).
  * ENTRADA: -tPosL: posicion de un elemento de la lista.
  *          -tList: lista de productos.
- * SALIDA: la posicion anterior a la posicion indicada.
+ * SALIDA: la posicion anterior a la indicada.
  * PRECD: la posición indicada es una posición válida en la lista.
 **/
 
@@ -86,7 +86,7 @@ bool createNode(tPosL *p);
 /**
  * OBJETIVO: inicializa un nodo reservando espacio en la memoria.
  * ENTRADA: -tPosL: posicion de un elemento de la lista.
- * SALIDA: un valor de tipo bool donde:
+ * SALIDA: un valor de tipo bool donde aparece:
  *              Verdadero: si el nodo no es NULL.
  *              Falso: en caso contrario.
  * POSTCD: el nodo reserva su respectivo espacio en la memoria.
@@ -97,10 +97,10 @@ bool insertItem(tItemL d, tPosL p, tList *L);
 /**
  * OBJETIVO: inserta un elemento en la lista antes de la posición indicada. Si la posición es LNULL,
              entonces se añade al final.
- * ENTRADA: -tItem: cojunto de datos de un producto de la lista.
+ * ENTRADA: -tItemL: cojunto de datos de un producto de la lista.
  *          -tPosL: posicion de un elemento de la lista.
  *          -tList: lista de productos.
- * SALIDA: un valor de tipo bool donde:
+ * SALIDA: un valor de tipo bool donde aparece:
  *              Verdadero: si el elemento fue insertado.
  *              Falso: en caso contrario.
  * PRECD: la posición indicada es una posición válida en la lista o bien nula (LNULL).
@@ -114,7 +114,7 @@ void deleteAtPosition(tPosL p, tList *L);
  * OBJETIVO: elimina de la lista el elemento que ocupa la posición indicada.
  * ENTRADA: -tPosL: posicion de un elemento de la lista.
  *          -tList: lista de productos.
- * SALIDA: la lista sin dicha posicion(borrado el elemnto que contenia).
+ * SALIDA: la lista sin dicha posicion (borrado el elemento que contenia).
  * PRECD: la posición indicada es una posición válida en la lista.
  * POSTCD: las posiciones de los elementos de la lista posteriores a la
            posicion eliminada pueden haber variado.
@@ -126,7 +126,7 @@ tItemL getItem(tPosL p, tList L);
  * OBJETIVO: devuelve el contenido del elemento de la lista que ocupa la posición indicada.
  * ENTRADA: -tPosL: posicion de un elemento de la lista.
  *          -tList: lista de productos.
- * SALIDA: el Item de dicha posicion.
+ * SALIDA: el contenido del elemento de dicha posicion.
  * PRECD: la posición indicada es una posición válida en la lista.
 **/
 
@@ -134,7 +134,7 @@ void updateItem(tItemL d, tPosL p, tList *L);
 
 /**
  * OBJETIVO: modifica el contenido del elemento situado en la posición indicada.
- * ENTRADA: -tItem: cojunto de datos de un producto de la lista.
+ * ENTRADA: -tItemL: cojunto de datos de un producto de la lista.
  *          -tPosL: posicion de un elemento de la lista.
  *          -tList: lista de productos.
  * SALIDA: la lista con el contenido de dicha posicion actualizado.
@@ -151,6 +151,5 @@ tPosL findItem(tProductId pd, tList L);
  *           -tList: lista de productos.
  * SALIDA: posicion del producto indicado.
 **/
-
 
 #endif
