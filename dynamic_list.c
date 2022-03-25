@@ -93,7 +93,7 @@ void deleteAtPosition(tPosL p, tList *L) {
 }
 
 tItemL getItem(tPosL p, tList L) {
-    return  p->data;
+    return p->data;
 }
 
 void updateItem(tItemL d, tPosL p, tList *L) {
@@ -104,7 +104,7 @@ tPosL findItem(tProductId pd, tList L) {
     tPosL p;
 
     for (p = L; p != LNULL; p = p->next) {
-        if((strcmp(p->data.productId, pd) == 0)){
+        if ((strcmp(p->data.productId, pd) == 0)) {
             return p;
         }
     }

@@ -1,4 +1,4 @@
-/snap/clion/180/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/180/bin/ninja/linux/ninja -G Ninja /home/dani/Escritorio/PRO-II-P1
+/snap/clion/184/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/184/bin/ninja/linux/ninja -G Ninja /home/dani/Escritorio/PRO-II-P1
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/dani/Escritorio/PRO-II-P1/cmake-build-debug

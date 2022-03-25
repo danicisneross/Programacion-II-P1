@@ -10,81 +10,80 @@
 #include "static_list.h"
 #include "string.h"
 
-void createEmptyList(tList *L){
-    L->lastPos= LNULL;
+void createEmptyList(tList *L) {
+    L->lastPos = LNULL;
 }
 
-bool isEmptyList(tList L){
-    return L.lastPos==LNULL;
+bool isEmptyList(tList L) {
+    return L.lastPos == LNULL;
 }
 
-tPosL first(tList L){
+tPosL first(tList L) {
     return 0;
 }
 
-tPosL last(tList L){
+tPosL last(tList L) {
     return L.lastPos;
 }
 
-tPosL next(tPosL p, tList L){
-    if (p==L.lastPos)
+tPosL next(tPosL p, tList L) {
+    if (p == L.lastPos)
         return LNULL;
     else
         return ++p;
-
 }
 
-tPosL previous(tPosL p, tList L){
-    if(p==0)
+tPosL previous(tPosL p, tList L) {
+    if (p == 0)
         return LNULL;
     else
         return --p;
 }
 
-bool insertItem(tItemL d, tPosL p, tList *L){
+bool insertItem(tItemL d, tPosL p, tList *L) {
     tPosL i;
 
-    if (L->lastPos==MAX-1) //La lista esta llena
+    if (L->lastPos == MAX - 1) //La lista esta llena
         return false;
     else {
         L->lastPos++;
-        if (p==LNULL) { //Insertar al final
+        if (p == LNULL) { //Insertar al final
             L->data[L->lastPos] = d;
         } else {
-            for (i = L->lastPos; i >=p+1; i--)
-                L->data[i] = L->data[i-1];
+            for (i = L->lastPos; i >= p + 1; i--)
+                L->data[i] = L->data[i - 1];
             L->data[p] = d;
         }
         return true;
-
     }
 }
 
-void deleteAtPosition(tPosL p, tList *L){
+void deleteAtPosition(tPosL p, tList *L) {
     tPosL i;
 
     L->lastPos--;
-    for(i=p;i <=L->lastPos; i++)
-        L->data[i]= L->data[i+1];
+    for (i = p; i <= L->lastPos; i++)
+        L->data[i] = L->data[i + 1];
 }
 
-tItemL getItem(tPosL p, tList L){
+tItemL getItem(tPosL p, tList L) {
     return L.data[p];
 }
 
-void updateItem(tItemL d, tPosL p, tList *L){
-    L->data[p]=d;
+void updateItem(tItemL d, tPosL p, tList *L) {
+    L->data[p] = d;
 }
 
-tPosL findItem(tProductId pd, tList L){
+tPosL findItem(tProductId pd, tList L) {
     tPosL p;
 
-    if (L.lastPos==LNULL)
+    if (L.lastPos == LNULL)
         return LNULL;
     else {
-        for(p=first(L); p<=L.lastPos ; p++){
-            if (strcmp (L.data[p].productId, pd)  == 0)
+        for (p = first(L); p <= L.lastPos; p++) {
+            if (strcmp(L.data[p].productId, pd) == 0)
                 return p;
-        } return LNULL;
+        }
+        return LNULL;
     }
 }

@@ -4,4 +4,4 @@ set(impl DYNAMIC)
 
 
 #Choose the input file for main (new.txt, bid.txt, delete.txt...)
-set(input new.txt)
+set(input delete.txt)

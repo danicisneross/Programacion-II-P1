@@ -24,66 +24,66 @@ typedef struct tNode {
 
 void createEmptyList(tList *L);
 
-/**
+/*
  * OBJETIVO: crear una lista vacia.
  * ENTRADA: -tList: lista.
  * SALIDA: una lista vacia.
  * POSTCD: la lista queda inicializada y no contine elementos.
-**/
+*/
 
 bool isEmptyList(tList L);
 
-/**
+/*
  * OBJETIVO: determina si la lista vacia.
  * ENTRADA: -tList: lista de productos.
  * SALIDA: un valor de tipo bool donde aparece:
  *              Verdadero: si esta vacia.
  *              Falso: en caso contrario.
-**/
+*/
 
 tPosL first(tList L);
 
-/**
+/*
  * OBJETIVO: devuelve la posición del primer elemento de la lista.
  * ENTRADA: -tList: lista de productos.
  * SALIDA: la primera posicion de la lista.
  * PRECD: la lista no está vacía..
-**/
+*/
 
 tPosL last(tList L);
 
-/**
+/*
  * OBJETIVO: devuelve la posición del último elemento de la lista.
  * ENTRADA: -tList: lista de productos.
  * SALIDA: la ultima posicion de la lista.
  * PRECD: la lista no está vacía.
-**/
+*/
 
 tPosL next(tPosL p, tList L);
 
-/**
+/*
  * OBJETIVO: devuelve la posición en la lista del elemento siguiente al de la posición indicada
  *           (o LNULL si la posición no tiene siguiente).
  * ENTRADA: -tPosL: posicion de un elemento de la lista.
  *          -tList: lista de productos.
  * SALIDA: la posicion siguiente a la indicada.
  * PRECD: la posición indicada es una posición válida en la lista.
-**/
+*/
 
 tPosL previous(tPosL p, tList L);
 
-/**
+/*
  * OBJETIVO: devuelve la posición en la lista del elemento anterior al de la posición indicada
  *           (o LNULL si la posición no tiene anterior).
  * ENTRADA: -tPosL: posicion de un elemento de la lista.
  *          -tList: lista de productos.
  * SALIDA: la posicion anterior a la indicada.
  * PRECD: la posición indicada es una posición válida en la lista.
-**/
+*/
 
 bool insertItem(tItemL d, tPosL p, tList *L);
 
-/**
+/*
  * OBJETIVO: inserta un elemento en la lista antes de la posición indicada. Si la posición es LNULL,
              entonces se añade al final.
  * ENTRADA: -tItemL: cojunto de datos de un producto de la lista.
@@ -95,11 +95,11 @@ bool insertItem(tItemL d, tPosL p, tList *L);
  * PRECD: la posición indicada es una posición válida en la lista o bien nula (LNULL).
  * POSTCD: las posiciones de los elementos de la lista posteriores a la del
            elemento insertado pueden haber variado.
-**/
+*/
 
 void deleteAtPosition(tPosL p, tList *L);
 
-/**
+/*
  * OBJETIVO: elimina de la lista el elemento que ocupa la posición indicada.
  * ENTRADA: -tPosL: posicion de un elemento de la lista.
  *          -tList: lista de productos.
@@ -107,7 +107,7 @@ void deleteAtPosition(tPosL p, tList *L);
  * PRECD: la posición indicada es una posición válida en la lista.
  * POSTCD: las posiciones de los elementos de la lista posteriores a la
            posicion eliminada pueden haber variado.
-**/
+*/
 
 tItemL getItem(tPosL p, tList L);
 
